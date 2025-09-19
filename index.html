@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.0/css/all.css">
+
+    <link rel="stylesheet" href="style.css">
+        <title>Flashcard app</title>
+
+</head>
+<body>
+    <input type="checkbox" id = "check">  <!--sidebar toggle-->
+    <label for="check" id="hambargerbtn">
+       <i class="fa-solid fa-plus"id = "hambarger"></i> <!-- hamberger menu icon-->
+    </label>
+    <div class="container"><!--sidebar-->
+        <div class="add-Flashcard">
+            <label for="check" id ="cancelbtn">
+                <i class="fa-solid fa-square-xmark" id="cancel" ></i>
+            </label>
+    
+            <div class="list1"> <!--flashcard form  -->
+                <textarea class="question1"placeholder="question"></textarea>
+                <textarea class="answer1"placeholder="answer"></textarea>
+            </div>
+            <div class="form-save"> <!--save card-->
+                <button class="save" id="savebtn" onclick="save();">Add</button>
+                <div id="cardarea">card list </div>
+            </div>
+        </div>
+     <div class="play"><!--play screen-->
+        <div class="playflash" id="playflash"></div>
+        <button class="nextbtn" id="nextbtn">Next</button> 
+        <button class="answerbtn" id="answerbtn">Answer</button>
+    </div>
+     <div id ="cardCount"></div> <!--Display area for the number of checked and unchecked cards -->
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
